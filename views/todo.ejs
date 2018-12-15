@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>ToDo List</title>
+        <link rel="stylesheet" href="/assets/styles.css">
+
+    </head>
+    <body>
+        <h1>My Todo List</h1>
+        <div id="todo-list">
+            <form action="">
+                <input type="text" name="item" placeholder="Add new Item...." required>
+                <button type="submit">Add Item</button>
+            </form>
+            <ul>
+                <% for(var i = 0 ; i < items.length ; i++){ %>
+                    <li><%= items[i].item %></li>
+                <% } %>
+
+            </ul>
+            <script src="/assets/jquery-1.12.0.min.js"></script>
+            <script src="/assets/todo-list.js"></script>
+
+        </div>
+
+
+    </body>
+</html>
